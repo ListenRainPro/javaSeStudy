@@ -9,6 +9,6 @@ package com.xuan;
 public class Dog  extends Pet{
     @Override
     public void coquetry(){
-        System.out.println("¹·ÔÚÈö½¿");
+        System.out.println("ç‹—åœ¨æ’’å¨‡");
     }
 }

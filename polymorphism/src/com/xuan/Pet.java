@@ -8,6 +8,6 @@ package com.xuan;
  */
 public class Pet {
     public  void coquetry(){
-        System.out.println("³èÎïÔÚÈö½¿");
+        System.out.println("å® ç‰©åœ¨æ’’å¨‡");
     }
 }
