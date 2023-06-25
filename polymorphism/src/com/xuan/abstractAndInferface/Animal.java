@@ -4,7 +4,7 @@ package com.xuan.abstractAndInferface;
  * @author lirongxuan
  * @version 1.0
  * @date 2023/6/25 13:44
- * @Description：
+ * @Description
  */
 public abstract class Animal {
 
