@@ -1,4 +1,4 @@
-package com.xuan;
+package com.xuan.array;
 
 /**
  * @author lirongxuan
@@ -8,9 +8,9 @@ package com.xuan;
  */
 public class SuperArray {
 
-    //Êý×é
+    //ï¿½ï¿½ï¿½ï¿½
     private int[] array;
-    //ÓÎ±ê
+    //ï¿½Î±ï¿½
     private int arrayIndex = 0;
 
     public SuperArray(){
@@ -22,10 +22,10 @@ public class SuperArray {
         array = new int[x];
     }
 
-    //Ìí¼ÓÒ»¸öÔªËØ
+    //ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void add(int element){
 
-        //Êý×éµ½´ïÉÏÏÞÊ±£¬À©ÈÝ
+        //ï¿½ï¿½ï¿½éµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if(arrayIndex > array.length - 1){
             int[] array2 = new int[array.length * 2];
             array = array2;
@@ -34,7 +34,7 @@ public class SuperArray {
         arrayIndex++;
     }
 
-    //É¾³ýÒ»¸öÔªËØ
+    //É¾ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void delete(int elementIndex){
 
         if (judge(elementIndex)){
@@ -46,7 +46,7 @@ public class SuperArray {
 
     }
 
-    //²éÕÒÒ»¸öÔªËØ
+    //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public int find(int elementIndex){
 
         if (judge(elementIndex)){
@@ -58,7 +58,7 @@ public class SuperArray {
 
     }
 
-    //ÐÞ¸ÄÒ»¸öÔªËØ
+    //ï¿½Þ¸ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void  alter(int element,int elementIndex){
 
         if (judge(elementIndex)) {
@@ -66,7 +66,7 @@ public class SuperArray {
         }
     }
 
-    //±éÀúÏÔÊ¾Êý×é
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
     public void arrarToString(){
         for (int i = 0; i < arrayIndex; i++) {
             System.out.print(array[i] + " ");
@@ -75,7 +75,7 @@ public class SuperArray {
 
     public boolean judge(int elementIndex){
         if (elementIndex<0 || elementIndex>arrayIndex){
-            System.out.println("ÏÂ±ê["+elementIndex+"]²»´æÔÚ");
+            System.out.println("ï¿½Â±ï¿½["+elementIndex+"]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             return false;
         }
         return true;

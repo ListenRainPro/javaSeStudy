@@ -1,4 +1,4 @@
-package com.xuan;
+package com.xuan.array;
 
 /**
  * @author lirongxuan
@@ -8,28 +8,28 @@ package com.xuan;
  */
 public class SuperLink {
 
-    //´´½¨Á´±íÍ·
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·
     private Node head;
 
-    //´´½¨Á´±í¼ÆÊý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private int nodeIndex = -1;
 
-    //Ìí¼ÓÒ»¸öÔªËØ
+    //ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void add(int data){
         if (nodeIndex == -1){
 
             head = new Node(data,null);
         }else {
 
-            //´´½¨Ò»¸öÖ¸ÏòÍ·²¿µÄnode
+            //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ö¸ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½node
             Node node = new Node(data,head);
-            //ÈÃÐÂµÄnode±ä³ÉÍ·
+            //ï¿½ï¿½ï¿½Âµï¿½nodeï¿½ï¿½ï¿½Í·
             head = node;
         }
         nodeIndex++;
     }
 
-    //Ö¸¶¨Î»ÖÃ²åÈënode
+    //Ö¸ï¿½ï¿½Î»ï¿½Ã²ï¿½ï¿½ï¿½node
     public void add(int index,int data){
         if (index == 0){
 
@@ -49,7 +49,7 @@ public class SuperLink {
         nodeIndex++;
     }
 
-    //É¾³ýÒ»¸öÔªËØ
+    //É¾ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void delete(int index){
 
         Node node = head;
@@ -58,12 +58,12 @@ public class SuperLink {
             node = node.getNode();
         }
 
-        //É¾³ýnode
+        //É¾ï¿½ï¿½node
         node.setNode(node.getNode().getNode());
         nodeIndex--;
 
     }
-    //²éÕÒÒ»¸öÔªËØ
+    //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public Integer find(int index){
 
         Node node = head;
@@ -85,7 +85,7 @@ public class SuperLink {
     }
 
 
-    //ÐÞ¸ÄÒ»¸öÔªËØ
+    //ï¿½Þ¸ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
     public void alter(int index , int data){
 
         Node node = head;
@@ -96,7 +96,7 @@ public class SuperLink {
         node.setData(data);
     }
 
-    //±éÀúÊä³öÁ´±í
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public String linkToString(){
 
         String result = "[";
@@ -112,7 +112,7 @@ public class SuperLink {
 
     }
 
-    //ÅÅÐò
+    //ï¿½ï¿½ï¿½ï¿½
     public void sort(){
         for (int i = 0; i < nodeIndex; i++) {
             for (int j = 0; j < nodeIndex-i; j++) {

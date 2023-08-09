@@ -1,4 +1,4 @@
-package com.xuan;
+package com.xuan.array;
 
 import java.util.Scanner;
 

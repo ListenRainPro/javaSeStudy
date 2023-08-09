@@ -1,4 +1,4 @@
-package com.xuan;
+package com.xuan.array;
 
 /**
  * @author lirongxuan
@@ -9,7 +9,7 @@ package com.xuan;
 public class MergerArray {
     public static void main(String[] args) {
 
-        //Ìá¹©Á½¸öÓÐÐòÊý×é
+        //ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         int[] array1 = {1, 2, 3,4,4,5};
         int a = 0;
         int[] array2 = {3, 4, 5, 7};
