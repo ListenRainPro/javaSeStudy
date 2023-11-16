@@ -1,6 +1,7 @@
 package com.xuan.javacore.test;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,7 +26,7 @@ public class DateTest {
 
         cal.getTime();
 
-
+        System.out.println(LocalDateTime.now());
 
     }
 
